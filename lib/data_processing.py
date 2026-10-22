@@ -9,7 +9,8 @@ def format_student_data(student):
     - Major
     such as: "ID: 10 | Name: Louis Medina | Major: Computer Science"
     """
-    return f"ID: {student['id']} | Name: {student['name']} | Major: {student['major']}"
+    student_id, name, major = student
+    return f"ID: {student_id} | Name: {name} | Major: {major}"
 
 def display_students(student_list):
     """
